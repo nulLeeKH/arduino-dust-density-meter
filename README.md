@@ -6,7 +6,7 @@ A firmware for arduino which developed for an experience booth at the Science an
 
 ## Ddependency Library
 
-- DustDensitySensor [[Download][https://github.com/nulLeeKH/arduino-optical-dust-sensor-library]]
+- DustDensitySensor [[Download](https://github.com/nulLeeKH/arduino-optical-dust-sensor-library)]
 
 ## Patch Note
 
