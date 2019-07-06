@@ -40,7 +40,7 @@ LiquidCrystal lcd(8, 9, 10, 11, 12, 13);
 //set pins for liquidcrystal
 
 void setup() {
-  dSensor.Setting(280, 40, 9680, 0.6, 0.0005);
+  dSensor.Setting(280, 40, 9680, 0.6, 0.005);
   //set measuring time for sensor
 
   lcd.begin(16, 2);
