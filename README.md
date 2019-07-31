@@ -1,7 +1,4 @@
 # arduino-dust-density-meter
-
-## About
-
 The firmware for arduino which developed for an experience booth at the Science and Technology Festival Hall of the 2018 Ulsan Education Exhibition.
 
 ## H/W Spec
