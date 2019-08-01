@@ -1,6 +1,10 @@
 # arduino-dust-density-meter
 The firmware for arduino which developed for an experience booth at the Science and Technology Festival Hall of the 2018 Ulsan Education Exhibition.
 
+## Info
+- schematic
+![schematic](./drawing/arduino-dust-density-meter-schematic.png)
+
 ## H/W Spec
 - Arduino uno × 1
 - 1602 LCD × 1
