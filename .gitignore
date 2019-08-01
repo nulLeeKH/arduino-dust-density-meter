@@ -5,3 +5,6 @@ CMakeLists.txt
 cmake/
 hw_test/
 *.s#*
+*.b#*
+*.job
+*.pro

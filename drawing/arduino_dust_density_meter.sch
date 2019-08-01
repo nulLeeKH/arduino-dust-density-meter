@@ -907,89 +907,6 @@ Shield form compatible with the Arduino Uno R3.
 </deviceset>
 </devicesets>
 </library>
-<library name="sharp-dust-sensor" urn="urn:adsk.eagle:library:12467232">
-<description>&lt;b&gt;sharp-dust-sensor&lt;/b&gt; - Dust Sensor Library
-
-&lt;p&gt;Devices:
-&lt;ul&gt;
-&lt;li&gt;GP2Y1010AU0F&lt;/li&gt;
-&lt;li&gt;GP2Y1014AU0F&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</description>
-<packages>
-<package name="GP2Y1014AU0F" urn="urn:adsk.eagle:footprint:12467234/2" library_version="3">
-<pad name="V-LED" x="-6.35" y="0" drill="0.7" shape="square"/>
-<pad name="LED-GND" x="-3.81" y="0" drill="0.7"/>
-<pad name="LED" x="-1.27" y="0" drill="0.7"/>
-<pad name="S-GND" x="1.27" y="0" drill="0.7"/>
-<pad name="VO" x="3.81" y="0" drill="0.7"/>
-<pad name="VCC" x="6.35" y="0" drill="0.7"/>
-<text x="-7.458" y="1.319665625" size="1.27" layer="25">&gt;NAME</text>
-<text x="-7.458" y="-2.589665625" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="GP2Y1014AU0F" urn="urn:adsk.eagle:package:12467238/4" type="model" library_version="3">
-<description>Single-row, 6-pin Receptacle Header (Female) Straight, 2.54 mm (0.10 in) col pitch, 2.54 mm insulator length, 15.24 X 2.54 X 2.54 mm body
-&lt;p&gt;Single-row (1X6), 6-pin Receptacle Header (Female) Straight package with 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 2.54 mm insulator length with overall size 15.24 X 2.54 X 2.54 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="GP2Y1014AU0F"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="GP2Y1014AU0F" urn="urn:adsk.eagle:symbol:12467235/2" library_version="3">
-<pin name="V-LED" x="-12.7" y="12.7" length="middle"/>
-<pin name="LED-GND" x="-12.7" y="7.62" length="middle"/>
-<pin name="LED" x="-12.7" y="2.54" length="middle"/>
-<pin name="S-GND" x="-12.7" y="-2.54" length="middle"/>
-<pin name="VO" x="-12.7" y="-7.62" length="middle"/>
-<pin name="VCC" x="-12.7" y="-12.7" length="middle"/>
-<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
-<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
-<text x="-7.62" y="17.78" size="1.778" layer="94">&gt;NAME</text>
-<text x="-7.62" y="-20.32" size="1.778" layer="94">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="GP2Y1014AU0F" urn="urn:adsk.eagle:component:12467239/3" library_version="3">
-<description>&lt;b&gt;GP2Y1014AU0F&lt;/b&gt; -Optical Dust Sensor
-
-&lt;p&gt;Technical Specifications:
-&lt;ul&gt;
-&lt;li&gt;VCC: 4.5-5.5V&lt;/li&gt;
-&lt;li&gt;Operating Temperature: -20°C to 65°C&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;
- 
-&lt;p&gt;Digikey: 1855-1013-ND&lt;br/&gt;
-Mouser: 852-GP2Y1014AU0F&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="GP2Y1014AU0F" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="GP2Y1014AU0F">
-<connects>
-<connect gate="G$1" pin="LED" pad="LED"/>
-<connect gate="G$1" pin="LED-GND" pad="LED-GND"/>
-<connect gate="G$1" pin="S-GND" pad="S-GND"/>
-<connect gate="G$1" pin="V-LED" pad="V-LED"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-<connect gate="G$1" pin="VO" pad="VO"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12467238/4"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="BeagleBone_Black_Wireless" urn="urn:adsk.eagle:library:6644236">
 <description>Generated from &lt;b&gt;BeagleBone_Black_Wireless.sch&lt;/b&gt;&lt;p&gt;
 by exp-lbrs.ulp</description>
@@ -5096,6 +5013,95 @@ Amotec Display part ADM0802A PDF
 </deviceset>
 </devicesets>
 </library>
+<library name="sharp-dust-sensor" urn="urn:adsk.eagle:library:12467483">
+<description>&lt;b&gt;sharp-dust-sensor&lt;/b&gt; - Dust Sensor Library
+
+&lt;p&gt;Devices:
+&lt;ul&gt;
+&lt;li&gt;GP2Y1010AU0F&lt;/li&gt;
+&lt;li&gt;GP2Y1014AU0F&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<packages>
+<package name="GP2Y1014AU0F" urn="urn:adsk.eagle:footprint:12467234/3" library_version="2" library_locally_modified="yes">
+<text x="-23.968" y="-22.909665625" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-23.968" y="16.559665625" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-24.13" y1="-16.51" x2="-8.89" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="-16.51" x2="22.86" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="22.86" y1="-16.51" x2="22.86" y2="16.51" width="0.127" layer="21"/>
+<wire x1="22.86" y1="16.51" x2="-24.13" y2="16.51" width="0.127" layer="21"/>
+<wire x1="-24.13" y1="16.51" x2="-24.13" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="-24.13" y1="-16.51" x2="-24.13" y2="-21.59" width="0.127" layer="21"/>
+<wire x1="-24.13" y1="-21.59" x2="-8.89" y2="-21.59" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="-21.59" x2="-8.89" y2="-16.51" width="0.127" layer="21"/>
+<pad name="V-LED1" x="-22.86" y="-19.05" drill="0.7" shape="square"/>
+<pad name="LED-GND1" x="-20.32" y="-19.05" drill="0.7"/>
+<pad name="LED1" x="-17.78" y="-19.05" drill="0.7"/>
+<pad name="S-GND1" x="-15.24" y="-19.05" drill="0.7"/>
+<pad name="VO1" x="-12.7" y="-19.05" drill="0.7"/>
+<pad name="VCC1" x="-10.16" y="-19.05" drill="0.7"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="GP2Y1014AU0F" urn="urn:adsk.eagle:package:12467238/6" type="model" library_version="2" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="GP2Y1014AU0F"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="GP2Y1014AU0F" urn="urn:adsk.eagle:symbol:12467485/1" library_version="2" library_locally_modified="yes">
+<pin name="V-LED" x="-12.7" y="12.7" length="middle"/>
+<pin name="LED-GND" x="-12.7" y="7.62" length="middle"/>
+<pin name="LED" x="-12.7" y="2.54" length="middle"/>
+<pin name="S-GND" x="-12.7" y="-2.54" length="middle"/>
+<pin name="VO" x="-12.7" y="-7.62" length="middle"/>
+<pin name="VCC" x="-12.7" y="-12.7" length="middle"/>
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
+<text x="-7.62" y="15.24" size="1.778" layer="94">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GP2Y1014AU0F" urn="urn:adsk.eagle:component:12467487/2" library_version="2" library_locally_modified="yes">
+<description>&lt;b&gt;GP2Y1014AU0F&lt;/b&gt; -Optical Dust Sensor
+
+&lt;p&gt;Technical Specifications:
+&lt;ul&gt;
+&lt;li&gt;VCC: 4.5-5.5V&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -20°C to 65°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: 1855-1013-ND&lt;br/&gt;
+Mouser: 852-GP2Y1014AU0F&lt;/p&gt;</description>
+<gates>
+<gate name="&gt;NAME" symbol="GP2Y1014AU0F" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GP2Y1014AU0F">
+<connects>
+<connect gate="&gt;NAME" pin="LED" pad="LED-GND1"/>
+<connect gate="&gt;NAME" pin="LED-GND" pad="LED1"/>
+<connect gate="&gt;NAME" pin="S-GND" pad="S-GND1"/>
+<connect gate="&gt;NAME" pin="V-LED" pad="V-LED1"/>
+<connect gate="&gt;NAME" pin="VCC" pad="VCC1"/>
+<connect gate="&gt;NAME" pin="VO" pad="VO1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12467238/6"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5107,12 +5113,12 @@ Amotec Display part ADM0802A PDF
 </classes>
 <parts>
 <part name="B1" library="SparkFun-Boards" library_urn="urn:adsk.eagle:library:509" deviceset="ARDUINO_UNO_R3_SHIELD" device="BASIC" package3d_urn="urn:adsk.eagle:package:37321/1" value="ARDUINO_UNO_R3"/>
-<part name="S1" library="sharp-dust-sensor" library_urn="urn:adsk.eagle:library:12467232" deviceset="GP2Y1014AU0F" device="" package3d_urn="urn:adsk.eagle:package:12467238/4"/>
 <part name="R1" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" deviceset="R-US_" device="0309/12" package3d_urn="urn:adsk.eagle:package:8118473/1" value="220"/>
 <part name="C1" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:491551" deviceset="WCAP-PTG5" device="_870025575007" package3d_urn="urn:adsk.eagle:package:491745/2" technology="_10X12,5"/>
 <part name="LCD1" library="SparkFun-Displays" library_urn="urn:adsk.eagle:library:515" deviceset="LCD-16X2" device="NOHOLES" package3d_urn="urn:adsk.eagle:package:38513/1" value="LCD-16X2"/>
 <part name="R2" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" deviceset="R-US_" device="0309/12" package3d_urn="urn:adsk.eagle:package:8118473/1" value="1k"/>
 <part name="R3" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" deviceset="R-US_" device="0309/12" package3d_urn="urn:adsk.eagle:package:8118473/1" value="1k"/>
+<part name="U$1" library="sharp-dust-sensor" library_urn="urn:adsk.eagle:library:12467483" deviceset="GP2Y1014AU0F" device="" package3d_urn="urn:adsk.eagle:package:12467238/6"/>
 </parts>
 <sheets>
 <sheet>
@@ -5122,10 +5128,6 @@ Amotec Display part ADM0802A PDF
 <instance part="B1" gate="G$1" x="114.3" y="38.1" smashed="yes">
 <attribute name="NAME" x="104.648" y="58.674" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="105.41" y="12.446" size="1.778" layer="96" font="vector" align="top-left"/>
-</instance>
-<instance part="S1" gate="G$1" x="165.1" y="78.74" smashed="yes">
-<attribute name="NAME" x="157.48" y="93.98" size="1.778" layer="94"/>
-<attribute name="VALUE" x="157.48" y="60.96" size="1.778" layer="94"/>
 </instance>
 <instance part="R1" gate="G$1" x="139.7" y="88.9" smashed="yes">
 <attribute name="NAME" x="135.89" y="90.3986" size="1.778" layer="95"/>
@@ -5147,13 +5149,16 @@ Amotec Display part ADM0802A PDF
 <attribute name="NAME" x="145.8214" y="8.89" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="145.542" y="3.81" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="U$1" gate="&gt;NAME" x="165.1" y="78.74" smashed="yes">
+<attribute name="NAME" x="157.48" y="93.98" size="1.778" layer="94"/>
+<attribute name="VALUE" x="157.48" y="60.96" size="1.778" layer="94"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="N$1" class="0">
 <segment>
-<pinref part="S1" gate="G$1" pin="V-LED"/>
 <wire x1="152.4" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="96.52" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
@@ -5162,6 +5167,7 @@ Amotec Display part ADM0802A PDF
 <wire x1="144.78" y1="88.9" x2="147.32" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="88.9" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
 <junction x="147.32" y="91.44"/>
+<pinref part="U$1" gate="&gt;NAME" pin="V-LED"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -5180,11 +5186,9 @@ Amotec Display part ADM0802A PDF
 <wire x1="99.06" y1="15.24" x2="99.06" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="7.62" x2="132.08" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="7.62" x2="132.08" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="LED-GND"/>
 <wire x1="132.08" y1="15.24" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="76.2" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="86.36" x2="152.4" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="S-GND"/>
 <wire x1="152.4" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
 <junction x="132.08" y="76.2"/>
 <junction x="132.08" y="15.24"/>
@@ -5203,29 +5207,30 @@ Amotec Display part ADM0802A PDF
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="147.32" y1="12.7" x2="147.32" y2="15.24" width="0.1524" layer="91"/>
 <junction x="147.32" y="15.24"/>
+<pinref part="U$1" gate="&gt;NAME" pin="LED-GND"/>
+<pinref part="U$1" gate="&gt;NAME" pin="S-GND"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="S1" gate="G$1" pin="LED"/>
 <wire x1="152.4" y1="81.28" x2="134.62" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="81.28" x2="134.62" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="D2"/>
 <wire x1="134.62" y1="48.26" x2="127" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="&gt;NAME" pin="LED"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="S1" gate="G$1" pin="VO"/>
 <wire x1="152.4" y1="71.12" x2="99.06" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="71.12" x2="99.06" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="A0"/>
 <wire x1="99.06" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="&gt;NAME" pin="VO"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="S1" gate="G$1" pin="VCC"/>
 <wire x1="152.4" y1="66.04" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="88.9" x2="129.54" y2="88.9" width="0.1524" layer="91"/>
@@ -5245,6 +5250,7 @@ Amotec Display part ADM0802A PDF
 <wire x1="154.94" y1="50.8" x2="139.7" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="50.8" x2="139.7" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="139.7" y="-2.54"/>
+<pinref part="U$1" gate="&gt;NAME" pin="VCC"/>
 </segment>
 </net>
 <net name="N$7" class="0">
