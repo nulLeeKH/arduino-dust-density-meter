@@ -5106,11 +5106,11 @@ Amotec Display part ADM0802A PDF
 </class>
 </classes>
 <parts>
-<part name="B1" library="SparkFun-Boards" library_urn="urn:adsk.eagle:library:509" deviceset="ARDUINO_UNO_R3_SHIELD" device="BASIC" package3d_urn="urn:adsk.eagle:package:37321/1"/>
-<part name="U$1" library="sharp-dust-sensor" library_urn="urn:adsk.eagle:library:12467232" deviceset="GP2Y1014AU0F" device="" package3d_urn="urn:adsk.eagle:package:12467238/4"/>
+<part name="B1" library="SparkFun-Boards" library_urn="urn:adsk.eagle:library:509" deviceset="ARDUINO_UNO_R3_SHIELD" device="BASIC" package3d_urn="urn:adsk.eagle:package:37321/1" value="ARDUINO_UNO_R3"/>
+<part name="S1" library="sharp-dust-sensor" library_urn="urn:adsk.eagle:library:12467232" deviceset="GP2Y1014AU0F" device="" package3d_urn="urn:adsk.eagle:package:12467238/4"/>
 <part name="R1" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" deviceset="R-US_" device="0309/12" package3d_urn="urn:adsk.eagle:package:8118473/1" value="220"/>
 <part name="C1" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:491551" deviceset="WCAP-PTG5" device="_870025575007" package3d_urn="urn:adsk.eagle:package:491745/2" technology="_10X12,5"/>
-<part name="LCD1" library="SparkFun-Displays" library_urn="urn:adsk.eagle:library:515" deviceset="LCD-16X2" device="NOHOLES" package3d_urn="urn:adsk.eagle:package:38513/1"/>
+<part name="LCD1" library="SparkFun-Displays" library_urn="urn:adsk.eagle:library:515" deviceset="LCD-16X2" device="NOHOLES" package3d_urn="urn:adsk.eagle:package:38513/1" value="LCD-16X2"/>
 <part name="R2" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" deviceset="R-US_" device="0309/12" package3d_urn="urn:adsk.eagle:package:8118473/1" value="1k"/>
 <part name="R3" library="BeagleBone_Black_Wireless" library_urn="urn:adsk.eagle:library:6644236" deviceset="R-US_" device="0309/12" package3d_urn="urn:adsk.eagle:package:8118473/1" value="1k"/>
 </parts>
@@ -5123,13 +5123,13 @@ Amotec Display part ADM0802A PDF
 <attribute name="NAME" x="104.648" y="58.674" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="105.41" y="12.446" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="U$1" gate="G$1" x="165.1" y="76.2" smashed="yes">
-<attribute name="NAME" x="157.48" y="91.44" size="1.778" layer="94"/>
-<attribute name="VALUE" x="157.48" y="58.42" size="1.778" layer="94"/>
+<instance part="S1" gate="G$1" x="165.1" y="78.74" smashed="yes">
+<attribute name="NAME" x="157.48" y="93.98" size="1.778" layer="94"/>
+<attribute name="VALUE" x="157.48" y="60.96" size="1.778" layer="94"/>
 </instance>
-<instance part="R1" gate="G$1" x="142.24" y="88.9" smashed="yes">
-<attribute name="NAME" x="138.43" y="90.3986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="138.43" y="85.598" size="1.778" layer="96"/>
+<instance part="R1" gate="G$1" x="139.7" y="88.9" smashed="yes">
+<attribute name="NAME" x="135.89" y="90.3986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="135.89" y="85.598" size="1.778" layer="96"/>
 </instance>
 <instance part="C1" gate="G$1" x="139.7" y="96.52" smashed="yes" rot="R270">
 <attribute name="NAME" x="137.16" y="100.965" size="1.778" layer="95"/>
@@ -5140,12 +5140,12 @@ Amotec Display part ADM0802A PDF
 <attribute name="VALUE" x="157.48" y="11.938" size="1.778" layer="96" align="top-left"/>
 </instance>
 <instance part="R2" gate="G$1" x="152.4" y="7.62" smashed="yes" rot="R90">
-<attribute name="NAME" x="150.9014" y="3.81" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="155.702" y="3.81" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="150.9014" y="8.89" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="150.622" y="3.81" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R3" gate="G$1" x="147.32" y="7.62" smashed="yes" rot="R90">
-<attribute name="NAME" x="145.8214" y="3.81" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="150.622" y="3.81" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="145.8214" y="8.89" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="145.542" y="3.81" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -5153,14 +5153,15 @@ Amotec Display part ADM0802A PDF
 <nets>
 <net name="N$1" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="U$1" gate="G$1" pin="V-LED"/>
-<wire x1="152.4" y1="88.9" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="V-LED"/>
+<wire x1="152.4" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="88.9" x2="147.32" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="96.52" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="96.52" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
-<junction x="149.86" y="88.9"/>
+<wire x1="144.78" y1="96.52" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="96.52" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="88.9" x2="147.32" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="88.9" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
+<junction x="147.32" y="91.44"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -5179,13 +5180,13 @@ Amotec Display part ADM0802A PDF
 <wire x1="99.06" y1="15.24" x2="99.06" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="7.62" x2="132.08" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="7.62" x2="132.08" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="LED-GND"/>
-<wire x1="132.08" y1="15.24" x2="132.08" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="73.66" x2="132.08" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="83.82" x2="152.4" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="S-GND"/>
-<wire x1="152.4" y1="73.66" x2="132.08" y2="73.66" width="0.1524" layer="91"/>
-<junction x="132.08" y="73.66"/>
+<pinref part="S1" gate="G$1" pin="LED-GND"/>
+<wire x1="132.08" y1="15.24" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="76.2" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="86.36" x2="152.4" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="S-GND"/>
+<wire x1="152.4" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
+<junction x="132.08" y="76.2"/>
 <junction x="132.08" y="15.24"/>
 <pinref part="LCD1" gate="G$1" pin="R/W"/>
 <wire x1="154.94" y1="43.18" x2="149.86" y2="43.18" width="0.1524" layer="91"/>
@@ -5206,34 +5207,34 @@ Amotec Display part ADM0802A PDF
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="LED"/>
-<wire x1="152.4" y1="78.74" x2="129.54" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="78.74" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="LED"/>
+<wire x1="152.4" y1="81.28" x2="134.62" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="81.28" x2="134.62" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="D2"/>
-<wire x1="129.54" y1="48.26" x2="127" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="48.26" x2="127" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VO"/>
-<wire x1="152.4" y1="68.58" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="68.58" x2="99.06" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="VO"/>
+<wire x1="152.4" y1="71.12" x2="99.06" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="71.12" x2="99.06" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="A0"/>
 <wire x1="99.06" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
-<wire x1="152.4" y1="63.5" x2="134.62" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="VCC"/>
+<wire x1="152.4" y1="66.04" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="88.9" x2="134.62" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="88.9" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="88.9" x2="129.54" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="88.9" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="5V"/>
 <wire x1="96.52" y1="88.9" x2="96.52" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="27.94" x2="101.6" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="63.5" x2="134.62" y2="88.9" width="0.1524" layer="91"/>
-<junction x="134.62" y="88.9"/>
+<wire x1="129.54" y1="66.04" x2="129.54" y2="88.9" width="0.1524" layer="91"/>
+<junction x="129.54" y="88.9"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="2.54" x2="152.4" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="-2.54" x2="139.7" y2="-2.54" width="0.1524" layer="91"/>
