@@ -3,7 +3,7 @@ The firmware for arduino which developed for an experience booth at the Science 
 
 ## Info
 - schematic
-![schematic](./drawing/arduino_dust_density_meter_schematic.png)
+![schematic](./drawing/arduino_dust_density_meter.png)
 
 ## H/W Spec
 - Arduino uno × 1
