@@ -1,6 +1,10 @@
 # arduino-dust-density-meter
 The firmware for arduino which developed for an experience booth at the Science and Technology Festival Hall of the 2018 Ulsan Education Exhibition.
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![HitCount](http://hits.dwyl.io/nulLeeKH/arduino-dust-density-meter.svg)](http://hits.dwyl.io/nulLeeKH/arduino-dust-density-meter)
+![GitHub last commit](https://img.shields.io/github/last-commit/nulLeeKH/arduino-dust-density-meter.svg)
+
 ## Info
 - schematic
 ![schematic](./drawing/arduino_dust_density_meter.png)
